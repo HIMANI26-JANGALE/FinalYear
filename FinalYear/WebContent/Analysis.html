@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <title>Analysis Page</title>
+    <link rel="stylesheet" href="analysis.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="logo"><a href="dashboard.html"><img src="logo.jpg" height="50px" width="60px"></a></div>
+            <div class="nav">
+                <ul>
+                    <li class="active"><a>Algorithm</a>
+                        <ul>
+                            <li><a href="kmeans.html">Incremental K-means</a></li>
+                            <li><a href="hierarchical.html">Hierachical </a></li>
+                            <li><a href="dbscan.html">DBSCAN </a></li>
+                            <li><a href="kmedoid.html">K-medoids </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="active"><a>Analysis</a>
+                        <ul>
+                            <li><a href="record-wise-analysis.html">Record-Wise Analysis</a></li>
+                            <li><a href="Analysis.html">Final Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a>Weather forecasting</a>
+                        <ul>
+                            <li><a href="dates-wise.html">Future Prediction</a></li>
+                            <li><a href="year-wise.html">Past Year-Wise</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="index.html">Log-Out</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </header>
+    <div class="analysis">
+        <div class="finalgraph">
+            <img src="final graph.png" height="580px" width="700px">
+        </div>
+        <div class="info">
+            <ul>
+                <li>The Graph shows analysis of Incremental k-means, DBSCAN, k-medoids and hierarchical clustering
+                    algorithm.</li>
+                <li>The Graph is based on the Execution time of the all algorithm.</li>
+                <li>The execution time of each clustering algorithm is done using different cluster
+                    value</li>
+                <li>It is observed that incremental kmeans takes less time to execute than other clustering
+                    algorithms.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

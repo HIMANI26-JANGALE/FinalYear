@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="algorithm.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="index.css">
+  <title>K-medoid Algorithm</title>
+  <script type="text/javascript">
+    function goToNewPage() {
+      var url = document.getElementById('list').value;
+      if (url != 'none') {
+        window.location = url;
+      }
+    }
+  </script>
+</head>
+
+<body background="p1.jpg">
+  <header>
+    <div class="main-nav">
+      <div class="logo"><a href="dashboard.html"><img src="logo.jpg" height="50px" width="60px"></a></div>
+      <div class="nav">
+        <ul>
+          <li class="active"><a>Algorithm</a>
+            <ul>
+              <li><a href="kmeans.html">Incremental K-means</a></li>
+              <li><a href="hierarchical.html">Hierachical </a></li>
+              <li><a href="dbscan.html">DBSCAN </a></li>
+              <li><a href="kmedoid.html">K-medoids </a></li>
+            </ul>
+          </li>
+
+          <li class="active"><a>Analysis</a>
+            <ul>
+              <li><a href="record-wise-analysis.html">Record-Wise Analysis</a></li>
+              <li><a href="Analysis.html">Final Analysis</a></li>
+            </ul>
+          </li>
+          <li class="active"><a>Weather forecasting</a>
+            <ul>
+              <li><a href="dates-wise.html">Future Prediction</a></li>
+              <li><a href="year-wise.html">Past Year-Wise</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="index.html">Log-Out</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </header>
+  <div class="algo-container">
+    <h1><u>K-Medoids Clustering algorithm </u></h1>
+    <br>
+    <b>
+      <p> K-Medoids (also called as Partitioning Around Medoid) algorithm was proposed in 1987 by Kaufman and Rousseeuw.
+        A medoid can be defined as the point in the cluster, whose dissimilarities with all the other points in the
+        cluster is minimum.The k-medoids algorithm is a clustering approach related to k-means clustering for
+        partitioning a data set into k groups or clusters. In k-medoids clustering, each cluster is represented by one
+        of the data point in the cluster. These points are named cluster medoids.
+      </p>
+      <br>
+      <p>The term medoid refers to an object within a cluster for which average dissimilarity between it and all the
+        other the members of the cluster is minimal. It corresponds to the most centrally located point in the cluster.
+      </p>
+      <p>K-medoid is a robust alternative to k-means clustering. This means that, the algorithm is less sensitive to
+        noise and outliers, compared to k-means, because it uses medoids as cluster centers instead of means (used in
+        k-means).The k-medoids algorithm requires the user to specify k, the number of clusters to be generated</p>
+      <br>
+      <h3>Uses of k medoids algorithm</h3>
+      <br>
+      <ul>
+        <b>
+          <li>It is simple to understand and easy to implement.</li>
+          <li>K-Medoid Algorithm is fast and converges in a fixed number of steps.</li>
+        </b>
+      </ul>
+      <center>
+
+        <br>
+        <h3><b>Select the value of cluters to see the output</b></h3>
+        <br>
+        <form>
+          <select name="list" id="list" accesskey="target">
+            <option value='none' selected>Number of cluster</option>
+            <option value="k-medoid_c1.html">1</option>
+            <option value="k-medoid_c2.html">2</option>
+            <option value="k-medoid_c3.html">3</option>
+          </select>
+          <input type=button class="button button2" value="Go" onclick="goToNewPage()" />
+        </form>
+        <button class="button button1" onclick="myclick()">Execution Time</button>
+    </b>
+  </div>
+  <script>
+    function myclick() {
+      document.location.href = "k-medoid_execution.html";
+    }
+  </script>
+
+  </center>
+
+
+
+</body>
+
+</html>

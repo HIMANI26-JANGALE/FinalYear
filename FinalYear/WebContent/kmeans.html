@@ -1,0 +1,122 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="algorithm.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="index.css">
+  <title>K-means Algorithm</title>
+  <script type="text/javascript">
+    function goToNewPage() {
+      var url = document.getElementById('list').value;
+      if (url != 'none') {
+        window.location = url;
+      }
+    }
+  </script>
+</head>
+
+
+<body background="p1.jpg">
+  <header>
+    <div class="main-nav">
+      <div class="logo"><a href="dashboard.html"><img src="logo.jpg" height="50px" width="60px"></a></div>
+      <div class="nav">
+        <ul>
+          <li class="active"><a>Algorithm</a>
+            <ul>
+              <li><a href="kmeans.html">Incremental K-means</a></li>
+              <li><a href="hierarchical.html">Hierachical </a></li>
+              <li><a href="dbscan.html">DBSCAN </a></li>
+              <li><a href="kmedoid.html">K-medoids </a></li>
+            </ul>
+          </li>
+
+          <li class="active"><a>Analysis</a>
+            <ul>
+                <li><a href="record-wise-analysis.html">Record-Wise Analysis</a></li>
+                <li><a href="Analysis.html">Final Analysis</a></li>
+            </ul>
+        </li>
+          <li class="active"><a>Weather forecasting</a>
+            <ul>
+              <li><a href="dates-wise.html">Future Prediction</a></li>
+              <li><a href="year-wise.html">Past Year-Wise</a></li>
+          </ul>
+          </li>
+          <li class="active"><a href="index.html">Log-Out</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </header>
+  <div class="algo-container">
+    <h1><u>Incremental K-means Clustering algorithm </u></h1>
+    <br>
+    <b>
+      <p> Incremental K-means clustering is a type of unsupervised learning, which is used when you have unlabeled data
+        (i.e., data without defined categories or groups). The goal of this algorithm is to find groups in the data,
+        with the number of groups represented by the variable K. The algorithm works iteratively to assign each data
+        point to one of K groups based on the features that are provided. Data points are clustered based on feature
+        similarity.
+        The results of this clustering algorithm are:
+      </p>
+      <ul><b>
+          <li>The centroids of the K clusters, which can be used to label new data</li>
+          <li>Labels for the training data (each data point is assigned to a single cluster)</li>
+        </b>
+      </ul>
+
+      <p> Incremental Kmeans algorithm is an iterative algorithm that tries to partition the dataset into Kpre-defined
+        distinct non-overlapping subgroups (clusters) where each data point belongs to only one group.
+        It tries to make the intra-cluster data points as similar as possible while also keeping the clusters as
+        different (far) as possible. It assigns data points to a cluster such that the sum of the squared distance
+        between the data points and the cluster’s centroid (arithmetic mean of all the data points that belong to that
+        cluster) is at the minimum. The less variation we have within clusters,the more homogeneous (similar) the data
+        points are within the same cluster.</p>
+    </b>
+    <br>
+    <h1><u>Applications :</u></h1>
+    <br>
+    <ul><b>
+        <li>Market Segmentation</li>
+        <li>document clustering</li>
+        <li>image segmentation and image compression</li>
+        <li>Get a meaningful intuition of the structure of the data we’re dealing with.</li>
+        <li>Cluster-then-predict where different models will be built for different subgroups if we believe there is a
+          wide variation in the behaviors of different subgroups. <br>An example of that is clustering patients into
+          different subgroups and build a model for each subgroup to predict the probability of the risk of having heart
+          attack.</li>
+      </b>
+    </ul>
+    <center>
+
+      <br>
+      <h3><b>Select the value of cluters to see the output</b></h3>
+      <br>
+      <form>
+        <select name="list" id="list" accesskey="target" placeholder="Enter no. of cluster">
+          <option value='none' selected>Number of cluster</option>
+          <option value="k-means_c1.html">1</option>
+          <option value="k-means_c2.html">2</option>
+          <option value="k-means_c3.html">3</option>
+        </select>
+
+
+        <input type=button class="button button2" value="Go" onclick="goToNewPage()" />
+      </form>
+      <button class="button button1" onclick="myclick()">Execution Time</button>
+  </div>
+  <script>
+    function myclick() {
+      document.location.href = "k-means_execution.html";
+    }
+  </script>
+
+  </center>
+
+
+</body>
+
+</html>

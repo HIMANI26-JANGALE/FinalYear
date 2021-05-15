@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <title>Record-Wise Analysis</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="record-wise-analysis.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="logo"><a href="dashboard.html"><img src="logo.jpg" height="50px" width="60px"></a></div>
+            <div class="nav">
+                <ul>
+                    <li class="active"><a>Algorithm</a>
+                        <ul>
+                            <li><a href="kmeans.html">Incremental K-means</a></li>
+                            <li><a href="hierarchical.html">Hierachical </a></li>
+                            <li><a href="dbscan.html">DBSCAN </a></li>
+                            <li><a href="kmedoid.html">K-medoids </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="active"><a>Analysis</a>
+                        <ul>
+                            <li><a href="record-wise-analysis.html">Record-Wise Analysis</a></li>
+                            <li><a href="Analysis.html">Final Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a>Weather forecasting</a>
+                        <ul>
+                            <li><a href="dates-wise.html">Future Prediction</a></li>
+                            <li><a href="year-wise.html">Past Year-Wise</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="index.html">Log-Out</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="table-container">
+        <center>
+            <h1>Record-Wise Analysis</h1>
+        </center>
+        <br>
+        <div class="table"><img src="record-wise-table.png" height="600" width="600"></div>
+        <br>
+        <div class="table-info">
+            <h3>The table of comparision of Clustering Algorithm based on number of record</h3>
+            <ul>
+                <li>We have consider the parameter of Execution time for the comparision.</li>
+                <li>The comparision is done based on the number of records in the datasets.</li>
+                <li> Number of Records 5, 10 ,20, 40 are considered.</li>
+                <li>Refer the table for the analysis of the clustering algorithm.</li>
+            </ul>
+        </div>
+
+    </div>
+    <br>
+    <div class="graph-container">
+        <center>
+            <h1>Graphs based on Record-Wise Analysis</h1>
+        </center>
+        <br>
+        <div class="row">
+            <div class="column">
+                <img src="graph1.png" alt="Snow" style="width:100%">
+                <center>
+                    <h4>Fig. Execution Time of 5 Records</h4>
+                </center>
+            </div>
+            <div class="column">
+                <img src="graph2.png" alt="Forest" style="width:100%">
+                <center>
+                    <h4>Fig. Execution Time of 10 Records</h4>
+                </center>
+            </div>
+            <div class="column">
+                <img src="graph3.png" alt="Mountains" style="width:100%">
+                <center>
+                    <h4>Fig. Execution Time of 20 Records</h4>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <img src="graph4.png" alt="Snow" style="width:100%">
+                <center>
+                    <h4>Fig. Execution Time of 40 Records</h4>
+                </center>
+            </div>
+            <div class="column1">
+                <img src="graph5.png" alt="Forest" style="width:100%">
+                <center>
+                    <h4>Fig. Average Execution Time of all Records</h4>
+                </center>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

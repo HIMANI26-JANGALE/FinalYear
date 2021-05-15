@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <title>Weather Forecasting</title>
+    <script type="text/javascript">
+        function goToNewPage() {
+            var url = document.getElementById('name').value;
+            if (url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+    </script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dates-wise.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="logo"><img src="logo.jpg" height="50px" width="60px"></div>
+            <div class="nav">
+                <ul>
+                    <li class="active"><a>Algorithm</a>
+                        <ul>
+                            <li><a href="kmeans.html">Incremental K-means</a></li>
+                            <li><a href="hierarchical.html">Hierachical </a></li>
+                            <li><a href="dbscan.html">DBSCAN </a></li>
+                            <li><a href="kmedoid.html">K-medoids </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="active"><a>Analysis</a>
+                        <ul>
+                            <li><a href="record-wise-analysis.html">Record-Wise Analysis</a></li>
+                            <li><a href="Analysis.html">Final Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a>Weather forecasting</a>
+                        <ul>
+                            <li><a href="dates-wise.html">Future Prediction</a></li>
+                            <li><a href="year-wise.html">Past Year-Wise</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="index.html">Log-Out</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </header>
+    <div class="dash-banner-weather">
+    <marquee style="margin-top: 80px;color:yellow; font-size: 20px;"></marquee>
+        <div class="form-section">
+            <center>
+                <form>
+                    <label>Select the year :</label>
+                    <select id="name">
+                        <option value='none' selected>--Select--</option>
+                        <option value="YearWise2015.html">2015</option>
+                        <option value="YearWise2016.html">2016</option>
+                        <option value="YesrWise2017.html">2017</option>
+                        <option value="YearWise2018.html">2018</option>
+                        <option value="YearWise2019.html">2019</option>
+                        <option value="YearWise2020.html">2020</option>
+                    </select>
+                    <input type=button class="button button2" value="Go" onclick="goToNewPage()" />
+                </form>
+            </center>
+        </div>
+    </div>
+    
+</body>
+
+</html>

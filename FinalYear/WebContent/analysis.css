@@ -1,0 +1,17 @@
+.analysis{
+    left: 20%;
+    position: absolute;
+}
+.finalgraph{
+    margin-top: 90px;
+}
+.info{
+    margin-top: 30px;
+    font-size: px;
+    width: 700px;
+    border-radius: 15px;
+    border: none;
+    padding: 30px;
+    background-image: linear-gradient(to right, #8e69c5, #6202EE);
+      
+}
